@@ -1,0 +1,12 @@
+# Base directory for the project, if your site's code is in a subdirectory
+# Since your project is within ExpenseTrackerPWA_v2, set this to that directory.
+base = "ExpenseTrackerPWA_v2"
+
+[build]
+  # The command Netlify should run to build your React application.
+  # This typically corresponds to the "build" script in your package.json.
+  command = "npm run build" # Or "yarn build" if you are using Yarn
+
+  # The directory where your compiled static files will be located after the build command runs.
+  # For Create React App, this is usually 'build'. For Vite, it's often 'dist'.
+  publish = "build"
